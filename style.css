@@ -1,0 +1,94 @@
+/* Font setup */
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #03223C;
+    color: #F4F4F7;
+}
+
+/* Card styling */
+.card {
+    background-color: transparent;
+    border: none;
+    border-radius: 10px;
+    max-width: 400px;
+    width: 100%;
+}
+
+.profile-img img {
+    width:200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid #F4F4F7;
+    margin-bottom: -60px;
+}
+
+.name {
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    background-color: #F4F4F7;
+    margin-bottom: 10px;
+}
+.name h2{
+    color: #03223C;
+    font-size: 24px;
+    font-family: "Proxima Nova";
+    font-style: normal;
+    font-weight: 700;
+    font-variant: small-caps;
+    margin: 0px !important;
+}
+
+.profession {
+    font-size: 18px;
+    color: #F4F4F7;
+    margin-bottom: 0px !important;
+}
+
+.description {
+    font-size: 14px;
+    color: #F4F4F7;
+    margin: 40px 0;
+}
+
+.boutons{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Button styling */
+.btn-primary {
+    background-color: #C12B35;
+    border: none;
+    color: #F4F4F7;
+    border-radius: 50px !important;
+}
+.btn-1:hover{
+    background-color: #8E1F24;
+}
+.btn-1:focus-visible{
+    border-color: transparent;
+}
+
+.btn-outline-secondary {
+    border-color: #F4F4F7;
+    color: #F4F4F7;
+    border-radius: 50px !important;
+}
+.btn-2:hover{
+    background-color: #021627;
+}
+
+/* Social icons */
+.social-icons a {
+    color: #F4F4F7;
+    font-size: 24px;
+    margin: 0 10px;
+}
+
+.social-icons a:hover {
+    color: #C12B35;
+}
