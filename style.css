@@ -92,3 +92,38 @@ body {
 .social-icons a:hover {
     color: #C12B35;
 }
+
+
+/* Style pour le texte du modal */
+.modal-content {
+    background-color: #fff; /* Assure un fond blanc pour le modal */
+    color: #000; /* Assure un texte noir pour une meilleure lisibilité */
+    border-radius: 8px; /* Ajoute des coins arrondis */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Ajoute une ombre pour le relief */
+}
+
+/* Style pour le titre du modal */
+.modal-title {
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+/* Style pour le corps du texte */
+.modal-body {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333; /* Couleur du texte plus sombre pour le contraste */
+}
+
+/* Style pour le bouton Fermer */
+.modal-footer .btn-secondary {
+    background-color: #007bff; /* Couleur du bouton */
+    border: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Hover effect sur le bouton Fermer */
+.modal-footer .btn-secondary:hover {
+    background-color: #0056b3;
+}

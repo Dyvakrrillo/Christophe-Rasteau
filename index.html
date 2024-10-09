@@ -22,17 +22,51 @@
             <p class="description">Spécialiste en récupération sportive et préparation physique, j'accompagne les athlètes de tous niveaux pour optimiser leurs performances et prévenir les blessures.</p>
             <div class="boutons">
                 <a href="https://wa.link/3b1mhk" target="_blank" class="btn btn-primary btn-1">Réserver un massage</a>
-                <a href="christopherasteau.vcf" class="btn btn-outline-secondary btn-2" download>Enregistrer le contact</a>
+                <a href="img/christopherasteau.vcf" class="btn btn-outline-secondary btn-2" download="christopherasteau.vcf" onclick="showInstructions();">Enregistrer le contact</a>
             </div>
             <div class="social-icons mt-4">
                 <a href="https://www.instagram.com/rasteau.christophe/" target="_blank"><i class="fab fa-instagram"></i></a>
                 <!-- <a href="#" ><i class="fas fa-link"></i></a> -->
                 <a href="mailto:rasteau.christophe@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a href="tel:+330661862907"><i class="fas fa-mobile-alt"></i></a>
             </div>
         </div>
     </div>
 
+    <!-- Modal -->
+    <div class="modal fade" id="instructionsModal" tabindex="-1" aria-labelledby="instructionsModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="instructionsModalLabel">Instructions pour enregistrer le contact</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <ol>
+                        <li>Ouvrez le fichier téléchargé à partir de votre dossier de téléchargements.</li>
+                        <li>Le contact sera ajouté automatiquement à votre application de contacts.</li>
+                    </ol>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function showInstructions() {
+            // Afficher le modal après un léger délai pour permettre le téléchargement
+            setTimeout(function() {
+                $('#instructionsModal').modal('show');
+            }, 500); // Délai de 500ms pour le téléchargement
+        }
+    </script>
+    
 </body>
 </html>
